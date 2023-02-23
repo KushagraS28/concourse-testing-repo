@@ -1,0 +1,24 @@
+name: my-rw
+type: concourse
+role:
+  owner:
+    user:
+    - abcd
+    group: []
+  operator:
+    user:
+    - user1
+    group: []
+  viewer:
+    user:
+    - view-user1
+    group:
+    - grp1
+secret_access_policy:
+  path:
+    path_name: /
+    role:
+      owner:
+        user:
+        - secret-user1
+        group: []
